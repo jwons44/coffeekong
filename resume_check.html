@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서 열람 및 전형단계</title>
+    <!-- 합쳐지고 최소화된 원본 부트스트랩 css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 자바 스크립트 기능 사용을 위한 원본 파일 -->
+    <link rel="stylesheet" href="js/bootstrap.js">
+
+    <!-- 헤더와 푸터의 CSS가 메인CSS 에 통합되어있음 같이 불러와야 합니다.-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/res.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <br><br><br><br><br>
+
+    <div class="container res_check_wrap">
+        <h1>이력서 조회</h1>
+        <br>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>홍길동 <small>1994년,29세</small></h2>
+                <h4>휴대폰 <small>011-2345-6789</small></h4>
+                <h5>Email <small>dddd@gmail.com</small></h5>
+            </div>
+
+
+            <div class="col-md-2">
+                <h2>학력</h2>
+                <h4>(학교명)</h4>
+                <small>졸업상태</small>
+            </div>
+
+            <div class="col-md-2">
+                <h2>경력</h2>
+                <h4>(회사명)</h4>
+                <small>근무기간</small>
+            </div>
+
+            <div class="col-md-2">
+                <h2>자격증</h2>
+                <h4>(자격증명)</h4>
+            </div>
+
+            <div class="col-md-2">
+                    <img class="res_check_picture" src="./img/company1.png" alt="프로필사진">
+            </div>
+        </div>
+
+        <hr>
+
+        <h1>학력</h1>
+
+        <div class="row">
+
+            <table class="table table-hover col-md-8">
+                <thead>
+                    <tr>
+                        <th>학교/기관명</th>
+                        <th>전공</th>
+                        <th>입학일</th>
+                        <th>졸업일</th>
+                        <th>졸업여부</th>
+                    </tr>
+                </thead>
+                <!--tbody 부분은 JSTL,EL 이용해서 반복문 처리로 불러오기-->
+                <tbody>
+                    <tr>
+                        <td>항목1-1</td>
+                        <td>항목1-2</td>
+                        <td>항목1-3</td>
+                        <td>항목1-4</td>
+                        <td>항목1-5</td>
+                    </tr>
+                    <tr>
+                        <td>항목2-1</td>
+                        <td>항목2-2</td>
+                        <td>항목2-3</td>
+                        <td>항목2-4</td>
+                        <td>항목2-5</td>
+                    </tr>
+                    <tr>
+                        <td>항목3-1</td>
+                        <td>항목3-2</td>
+                        <td>항목3-3</td>
+                        <td>항목3-4</td>
+                        <td>항목3-5</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <hr>
+
+        <h1>경력</h1>
+
+        <div class="row">
+
+            <table class="table table-hover col-md-8">
+                <thead>
+                    <tr>
+                        <th>회사명</th>
+                        <th>부서명(담당업무)</th>
+                        <th>근무시작일</th>
+                        <th>근무종료일</th>
+                        <th>직위</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>항목1-1</td>
+                        <td>항목1-2</td>
+                        <td>항목1-3</td>
+                        <td>항목1-4</td>
+                        <td>항목1-5</td>
+                    </tr>
+                    <tr>
+                        <td>항목2-1</td>
+                        <td>항목2-2</td>
+                        <td>항목2-3</td>
+                        <td>항목2-4</td>
+                        <td>항목2-5</td>
+                    </tr>
+                    <tr>
+                        <td>항목3-1</td>
+                        <td>항목3-2</td>
+                        <td>항목3-3</td>
+                        <td>항목3-4</td>
+                        <td>항목3-5</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <hr>
+
+        <h1>자격증</h1>
+
+        <div class="row">
+
+            <table class="table table-hover col-md-8">
+                <thead>
+                    <tr>
+                        <th>자격증명</th>
+                        <th>발행기관</th>
+                        <th>취득일</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>항목1-1</td>
+                        <td>항목1-2</td>
+                        <td>항목1-3</td>
+
+                    </tr>
+                    <tr>
+                        <td>항목2-1</td>
+                        <td>항목2-2</td>
+                        <td>항목2-3</td>
+
+                    </tr>
+                    <tr>
+                        <td>항목3-1</td>
+                        <td>항목3-2</td>
+                        <td>항목3-3</td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <hr>
+
+
+
+        <div class="row">
+
+            <div class="col-md-8 res_check_prog">
+
+                <h2>진행 단계</h2>
+                <h1 style="text-align: center">심사 진행 중</h1>
+
+            </div>
+
+            <div class="col-md-4 res_check_download">
+                <!-- a 태그에 다운로드 속성 a 태그 링크에 있는 파일을 다운로드 -->
+                <!-- 일단 임의의 이미지 파일로 테스트.. 더 나은 방식은 개발단계에서 고민해보기 -->
+                <a href="./img/carousel-img1.png" download>
+                    <button type="button" class="btn btn-default btn-modif btn-lg">이력서 다운로드</button>
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <!--온클릭 시 비동기 통신으로 새로고침 없이 버튼 눌렀을 때 바로 합격,취소,불합격 적용되고, 진행 상태에도 적용되는 방향(?) -->
+            <div class="col-md-2">
+                <h2>서류 <small>1차</small></h2>
+                <button type="button" class="btn btn-default btn-insert" onclick="">합격</button>
+                <button type="button" class="btn btn-default btn-cancel" onclick="">합격 취소</button>
+            </div>
+
+
+            <div class="col-md-2">
+                <h2>면접 <small>2차</small></h2>
+                <button type="button" class="btn btn-default btn-insert" onclick="">합격</button>
+                <button type="button" class="btn btn-default btn-cancel" onclick="">합격 취소</button>
+            </div>
+
+
+            <div class="col-md-2">
+                <h2>최종</h2>
+                <button type="button" class="btn btn-default btn-insert" onclick="">합격</button>
+                <button type="button" class="btn btn-default btn-cancel" onclick="">합격 취소</button>
+            </div>
+
+            <div class="col-md-3">
+                <button type="button" class="btn btn-default btn-del btn-lg" onclick="">불합격</button>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div id="footer"></div>
+
+
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+
+    <div class="top">
+        <a href="#">TOP</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+</body>
+
+</html>

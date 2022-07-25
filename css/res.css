@@ -1,0 +1,112 @@
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* ================ res_write ================ */
+.form-group {
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+.input-group {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+/* ================ 제일바깥 ================ */
+.res_write_out_wrap {
+    margin-top: 130px;
+}
+.res_write_out_wrap .res_write_title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* ================ 폼태그 ================ */
+.res_write_inner_wrap h3 {
+    font-weight: bold;
+}
+.res_write_inner_wrap .res_write_con {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-top: 1px solid rgb(222, 219, 219);
+    position: relative;
+}
+.res_write_inner_wrap .res_write_con .btn {
+    margin-top: 10px;
+}
+
+.res_write_inner_wrap .res_info {
+    margin-bottom: 40px;
+}
+.res_write_inner_wrap .res_info .picture {
+    padding: 5px;
+    border: 1px solid #0080ff;
+    background: #bdd5ec2b;
+    text-align: center;
+    font-size: 1.2em;
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+
+.res_write_inner_wrap .res_info .picture .form-label {
+    line-height: 200px;
+}
+.res_write_inner_wrap .res_info .picture .form-label:hover{
+    color: #0080ff;
+}
+
+.res_write_inner_wrap .res_info .form-group {
+    margin: 6px;
+}
+#addrBasic {
+    margin-top: 3px;
+}
+#addrBasic,
+#addrDetail {
+    width: 400px;
+}
+
+/* ================ 이력서등록,취소버튼 ================ */
+.res_write_btn_wrap {
+    position: relative;
+    margin-bottom: 30px;
+}
+.res_insert_btn {
+    font-size: 1.3em;
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
+.res_cancel_btn {
+    font-size: 1.3em;
+    position: absolute;
+    top: 10px;
+    left: 630px;
+}
+
+/* ======================= 이력서 상세조회,전형단계 확인 ====================== */
+
+
+.res_check_wrap > h1,h2,h3,h4,h5 {
+    font-weight: bold;
+}
+.res_check_prog {
+    margin: 100px auto;
+
+}
+
+.res_check_picture {
+    width: 150px;
+    height: 200px;
+    
+}
+
+.res_check_prog > h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}

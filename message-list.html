@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./css/message.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+
+<body>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#messageModal">
+        쪽지함
+    </button>
+
+
+    <div id="messageModal" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">쪽지 목록</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="tab">
+                        <div class="choice">
+                            <a id="receive" class="panel active" onclick="active(0)">받은 쪽지</a>
+                            <a id="send" class="panel" onclick="active(1)">보낸 쪽지</a>
+                        </div>
+                    </div>
+                    <table id="content1" class="table table-hover content on">
+                        <thead>
+                            <tr>
+                                <th>제목</th>
+                                <th>내용</th>
+                                <th>보낸사람</th>
+                                <th>날짜</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>공지드립니다</td>
+                                <td>2022년 7월 25일은 학원 가는 날입니다.</td>
+                                <td>커피콩</td>
+                                <td>2022-07-24</td>
+                            </tr>
+                            <tr>
+                                <td>또 공지드립니다</td>
+                                <td>2022년 7월 26일은 학원 가는 날입니다.</td>
+                                <td>커피콩</td>
+                                <td>2022-07-24</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <table id="content2" class="table table-hover content">
+                        <thead>
+                            <tr>
+                                <th>제목</th>
+                                <th>내용</th>
+                                <th>보낸사람</th>
+                                <th>날짜</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>보아라</td>
+                                <td>너는 잘 할 수 있단다 대충 긍정적 문구 어쩌구</td>
+                                <td>김미래</td>
+                                <td>2022-07-24</td>
+                            </tr>
+                            <tr>
+                                <td>또 보아라</td>
+                                <td>낼 학원 가기 귀찮다. 하지만 어쩌겠어 가야하는걸</td>
+                                <td>김미래</td>
+                                <td>2022-07-24</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <div class="paging">
+                        <a href="#" class="bt first"><<</a>
+                        <a href="#" class="bt prev"><</a>
+                        <a href="#" class="num">1</a>
+                        <a href="#" class="num">2</a>
+                        <a href="#" class="num">3</a>
+                        <a href="#" class="num">4</a>
+                        <a href="#" class="num">5</a>
+                        <a href="#" class="bt next">></a>
+                        <a href="#" class="bt last">>></a>
+                    </div>
+                    <button type="button" class="btn btn-insert">쪽지 보내기</button>
+                    
+                </div>
+            </div><!-- /.modal-content -->
+
+        
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+    <script>
+
+       function active(num){
+
+            $('.choice a').removeClass('active');
+            $('.content').removeClass('on');
+            if(num==0){
+                $('#receive').addClass('active');
+                $('#content1').addClass('on');
+            }
+            else{
+                $('#send').addClass('active');
+                $('#content2').addClass('on');
+            }
+         }
+    </script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>
