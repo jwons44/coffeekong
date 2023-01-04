@@ -69,7 +69,7 @@ a:focus {
     line-height: 50px; 
     color: black;
 }
-.active{background-color: rgba(51, 122, 183) !important; 
+.active{background-color: #0080ff  !important; 
     color:white !important;
 }
 .content{display: none;}
@@ -106,3 +106,20 @@ a:focus {
     font-size: 25px;
 }
 
+.hp_con {
+    float: left;
+    margin-right: 8px;
+}
+
+.hp_con2 {
+    margin-top: 5px;
+}
+
+.comp_email {
+    margin-top: 50px;
+}
+
+.btn-insert {
+    font-size: 25px;
+    background: white;
+}

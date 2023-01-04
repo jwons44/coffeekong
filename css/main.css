@@ -25,6 +25,9 @@ img {
     max-width: 100%; 
     height: auto; 
 }
+a {
+	color: black;
+}
 
 /* ================ buttons ================ */
 .btn-insert,
@@ -85,6 +88,9 @@ header .container {
     margin-bottom: 0;
     height: 100px;
 }
+#myNavbar .nav-list {
+	margin-top: 50px;
+}
 
 .navbar-header .navbar-brand {
     padding: 10px 15px;
@@ -133,6 +139,9 @@ hr{
     margin: 0 0 15px;
 }
 
+.nav .open > a:hover, .nav .open > a:focus {
+    background-color: #0080ff;
+}
 
 /* ================ main ================ */
 
@@ -168,6 +177,8 @@ hr{
     right: 10px;
 }
 
+
+
 .section2 .inner {
     border: 1px solid #ddd;
     padding: 0 5px;
@@ -185,6 +196,7 @@ hr{
 }
 .section2 .board-list {
     line-height: 25px;
+    margin-bottom: 0;
 }
 .section2 .board-list a {
     color: black;
@@ -201,7 +213,7 @@ hr{
 
 /* ================ footer ================ */
 footer {
-    margin-top: 40px;
+    margin-top: 150px;
     background: #517787;
     padding: 30px 0 15px;
 }
@@ -248,6 +260,7 @@ footer address {
 .section3 .sub_text {
     font-size: 1.3em;
     line-height: 35px;
+    text-align: left;
 }
 
 .section3 .outline_wrap {
@@ -287,4 +300,44 @@ footer address {
     font-size: 1.2em;
 }
 
+/* ================ 유저정보보기(관리자) ================ */
+.admin_user_title {
+    background: #0080ff;
+    color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.admin_user_title h4 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.admin_user_title button.close {
+    color: white;
+    font-size: 35px;
+}
+.admin_user_info h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.admin_user_info h3:nth-of-type(1) {
+    margin-top: 10px;
+}
+.admin_user_info h3:nth-of-type(1) small {
+    margin-left: 100px;
+}
+.admin_user_info h3:nth-of-type(2) small {
+    margin-left: 80px;
+}
+.admin_user_info h3:nth-of-type(3) small {
+    margin-left: 63px;
+}
+.admin_user_info h3:nth-of-type(4) small {
+    margin-left: 45px;
+}
+.admin_user_info h3:nth-of-type(5) small {
+    margin-left: 80px;
+}
+.admin_comp_info h3:nth-of-type(2) small {
+    margin-left: 42px;
+}
 

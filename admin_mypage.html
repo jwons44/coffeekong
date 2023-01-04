@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 페이지</title>
+    <!-- 합쳐지고 최소화된 원본 부트스트랩 css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/res.css">
+    <link rel="stylesheet" href="./css/my.css"
+  
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <br><br><br><br><br>
+
+    <div class="container">
+    <div class="contents">
+       
+        <br>
+        <hr>
+
+        
+
+        </div>
+        <div class="row">
+            <div class="col-md-4" id="a">
+                <h2> 신고 유저 <br> &nbsp <span class="resume_count" > 6 </span> 명 </h2>
+                <a href="user_list.html"><button type="button" class="btn btn-modify">사용자 관리</button></a>
+            </div>
+
+
+            <div class="col-md-4" id="b">
+                <h2> 가입기업 <br>  <span class="resume_count" > 6 </span> 기업 </h2>
+                <a href="comp_list.html"><button type="button" class="btn btn-list"> 기업 관리 </button></a>
+                
+            </div>
+
+            <div class="col-md-4" id="c">
+                <h2>미수신 쪽지 <br> &nbsp &nbsp <span class="resume_count"> 13 </span> 개 </h2>
+                <a href="message-list.html"><button type="button" class="btn btn-list"> 쪽지함 이동 </button></a>
+                
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h1 class="col-md-4">통계</h1>
+        <span class="col-md-6"></span>
+        <a href="statistics_list.html" class="col-md-3"><button type="button" class="btn btn-modify" id="situ"> 통계 관리</button></a> 
+        
+
+        <div class="row">
+
+            <table class="table table-hover col-md-8" id="g">
+                <thead>
+                    <tr>
+                        <th class="col-md-3">통계 사진</th>
+                        <th class="col-md-2">통계 이름</th>
+                        
+                        <th class="col-md-2">등록일</th>
+                        <th class="col-md-2">수정일</th>
+                    </tr>
+                </thead>
+                <!--tbody 부분은 JSTL,EL 이용해서 반복문 처리로 불러오기-->
+                <tbody class="ps_transition" onclick="location.href='statistics_list.html'">
+                    <tr>
+                        <td>                        
+                        <figure>
+                            <img src="./img/statistics.jpg" alt="..." id="stat_img" >
+                          
+                        </figure></td>
+                        <td>2022.07월 지원자 수</td>
+                        
+                        <td>2022.07.25</td>
+                        <td>2022.07.26</td>
+                    </tr>
+                    <tr>
+                        <td>                        
+                            <figure>
+                                <img src="./img/statistics2.jpg" alt="..." id="stat_img" >
+                          
+                            </figure></td>
+                            <td>2022.07월 기업 만족도</td>
+                        
+                            <td>2022.07.25</td>
+                            <td>2022.07.26</td>
+                    </tr>
+                    <tr>
+                        <td>                        
+                            <figure>
+                                <img src="./img/statistics.jpg" alt="..." id="stat_img">
+                             
+                            </figure></td>
+                            <td>2022.07월 지원자 수</td>
+                        
+                            <td>2022.07.25</td>
+                            <td>2022.07.26</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <div id="footer"></div>
+
+
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+
+    <div class="top">
+        <a href="#">TOP</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+</body>
+
+</html>

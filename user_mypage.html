@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 페이지</title>
+    <!-- 합쳐지고 최소화된 원본 부트스트랩 css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/res.css">
+    <link rel="stylesheet" href="./css/my.css"
+  
+</head>
+
+<body id="mypage_body">
+
+    <div id="header"></div>
+
+    <br><br>
+    <div class="container">
+    <div class="contents">
+       
+        <br>
+        <hr>
+
+        
+
+        </div>
+        <div class="row">
+            <div class="col-md-4" id="a">
+                <h2>&nbsp 최민석  님 <br> &nbsp 환영합니다.</h2>
+                <a href="user_modify.html"><button type="button" class="btn btn-modify">회원 정보 수정</button></a>
+            </div>
+
+
+            <div class="col-md-4" id="b">
+                <h2>이력서 개수 <br> &nbsp &nbsp  <span class="resume_count" > 6 </span> 개 </h2>
+                <a href="resum_list.html"><button type="button" class="btn btn-list"> 이력서 목록 </button></a>
+                
+            </div>
+
+            <div class="col-md-4" id="c">
+                <h2> 미수신 쪽지 <br> &nbsp &nbsp <span class="resume_count"> 13 </span> 개 </h2>
+                <a href="message-list.html"><button type="button" class="btn btn-list"> 쪽지함 이동 </button></a>
+                
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h1 class="col-md-4">지원현황 </h1>
+        <span class="col-md-6"></span>
+        <a href="recruitment.html" class="col-md-3"><button type="button" class="btn btn-modify" id="situ"> 전체 보기</button></a> 
+        
+
+        <div class="row">
+
+            <table class="table table-hover col-md-8" id="g">
+                <thead>
+                    <tr>
+                        <th class="col-md-3"> 지원 공고</th>
+                        <th class="col-md-2">진행 상황</th>
+                        <th class="col-md-3">채용 전형</th>
+                        <th class="col-md-2">등록일</th>
+                        <th class="col-md-2">수정일</th>
+                    </tr>
+                </thead>
+                <!--tbody 부분은 JSTL,EL 이용해서 반복문 처리로 불러오기-->
+                <tbody class="ps_transition" onclick="location.href='recruitment.html'">
+                    <tr>
+                        <td>                        
+                        <figure>
+                            <img src="./img/다운로드.jpg" alt="..." id="comp_image">
+                           &nbsp &nbsp 맥두날드
+                        </figure></td>
+                        <td>불합격</td>
+                        <td>정규직</td>
+                        <td>2022.07.25</td>
+                        <td>2022.07.26</td>
+                    </tr>
+                    <tr>
+                        <td>                        
+                            <figure>
+                                <img src="./img/츄파츕스.jpg" alt="..." id="comp_image">
+                               &nbsp &nbsp 츄파츕스
+                            </figure></td>
+                        <td>1차 합격</td>
+                        <td>인턴</td>
+                        <td>2022.07.19</td>
+                        <td>2022.07.21</td>
+                    </tr>
+                    <tr>
+                        <td>                        
+                            <figure>
+                                <img src="./img/스타벅스.jpg" alt="..." id="comp_image">
+                               &nbsp &nbsp 스타벅스
+                            </figure></td>
+                        <td>면접 진행중</td>
+                        <td>정규직</td>
+                        <td>2022.07.05</td>
+                        <td>2022.07.14</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+       
+
+  
+      
+    </div>
+
+
+    <div id="footer"></div>
+
+
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+
+    <div class="top">
+        <a href="#">TOP</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -10,18 +10,27 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+                        <a class="navbar-brand" href="main.html"><img src="./img/logo.png" alt="logo"></a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right">
-                            <button type="button" class="btn btn-default navbar-btn" onclick="location.href='login.html'">로그인</button>
-                            <button type="button" class="btn btn-default navbar-btn" onclick="location.href='join.html'">회원가입</button>
+                            <button type="button" class="btn btn-default navbar-btn"
+                                onclick="location.href='login.html'">로그인</button>
+                            <button type="button" class="btn btn-default navbar-btn"
+                                onclick="location.href='join.html'">회원가입</button>
                         </ul>
                         <ul class="nav navbar-nav nav-list">
                             <li><a href="intro.html">박람회소개</a></li>
                             <li><a href="ch_list.html">채용정보관</a></li>
-                            <li><a href="go_list.html">정보마당</a></li>
+                            <li class="dropdown header_dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">정보마당<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="go_list.html">공지사항</a></li>
+                                    <li><a href="free_board_list.html">자유게시판</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">마이페이지</a></li>
                         </ul>
                     </div>

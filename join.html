@@ -91,23 +91,28 @@
                               </div>
                             
                         
-                        <div class="form-group">
+                        <div class="form-group clearfix">
                             <label for="hp">전화번호</label><br>
-                            <select class="form-control" style="width: 100px; display:inline-block">
+                            <select class="form-control hp_con" style="width: 100px; display:inline-block">
                                 <option>SKT</option>
                                 <option>KT</option>
                                 <option>LGU+</option>
                               </select>
-                              <select class="form-control" style="width: 80px; display:inline-block">
+                              <select class="form-control hp_con" style="width: 80px; display:inline-block">
                                 <option>010</option>
                                 <option>011</option>
                                 <option>017</option>
-                              </select> - 
+                              </select> 
+                              
+                              <div class="hp_con hp_con2">-</div>
 
-                              <div class="input-group" style="display: inline-block;" >
+                              <div class="input-group hp_con" style="display: inline-block;" >
                                     <input type="text" id="name" class="form-control">
-                              </div> - 
-                              <div class="input-group" style="display: inline-block;" >
+                              </div>
+
+                              <div class="hp_con hp_con2">-</div>
+
+                              <div class="input-group hp_con" style="display: inline-block;" >
                                 <input type="text" id="name" class="form-control">
                              </div>
                         </div>
@@ -350,7 +355,7 @@
 
                         <!--회원 가입 버튼 -->
                        <div class="form-group">
-                            <button type="submit" class="btn btn-lg btn-info btn-block" onclick="location.href='login.html'">회원가입</button>
+                            <button type="submit" class="btn btn-lg btn-insert btn-block" onclick="location.href='login.html'">회원가입</button>
                         </div>
                        
 
@@ -444,24 +449,26 @@
                         </div>
                         <div class="form-group">
                             <label for="hp">전화번호</label><br>
-                            <select class="form-control" style="width: 100px; display:inline-block">
+                            <select class="form-control hp_con" style="width: 100px; display:inline-block">
                                 <option>SKT</option>
                                 <option>KT</option>
                                 <option>LGU+</option>
                               </select>
-                              <select class="form-control" style="width: 80px; display:inline-block">
+                              <select class="form-control hp_con" style="width: 80px; display:inline-block">
                                 <option>010</option>
                                 <option>011</option>
                                 <option>017</option>
-                              </select> -
-                              <div class="input-group" style="display: inline-block;" >
+                              </select> 
+                              <div class="hp_con hp_con2">-</div>
+                              <div class="input-group hp_con" style="display: inline-block;" >
                                     <input type="text" id="name" class="form-control">
-                              </div> - 
-                              <div class="input-group" style="display: inline-block;" >
+                              </div> 
+                              <div class="hp_con hp_con2">-</div>
+                              <div class="input-group hp_con" style="display: inline-block;" >
                                 <input type="text" id="name" class="form-control">
                              </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group comp_email">
                             <label for="exampleInputEmail2">Email</label>
                             <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
                           </div>
@@ -880,7 +887,7 @@
                         <br>
 
                         <div class="form-group">
-                            <button type="submit" class="btn btn-lg btn-info btn-block">회원가입</button>
+                            <button type="submit" class="btn btn-lg btn-insert btn-block">회원가입</button>
                         </div>
 
                     </form>
@@ -895,7 +902,6 @@
     <div class="top">
         <a href="#">TOP</a> 
     </div>
-    
     <div id="footer"></div>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>

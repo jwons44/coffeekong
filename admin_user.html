@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!--Font Awesome 아이콘-->
+    <script src="https://kit.fontawesome.com/8813e159ee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+<a data-toggle="modal" href="#adminUserModal">Open Modal</a>
+
+<div id="adminUserModal" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header admin_user_title">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="gridSystemModalLabel">회원정보</h4>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row admin_user_info">
+              <div class="col-md-5"><img src="/img/img_ready.png" alt=""></div>
+              <div class="col-md-6 ">
+              <h3>ID<small> kim1234</small></h3>
+              <h3>이름<small> 홍길동</small></h3>
+              <h3>이메일<small> asd123@naver.com</small></h3>
+              <h3>전화번호<small> 010-1234-1234</small></h3>
+              <h3>주소<small> 경기도 용인시 처인구</small></h3>
+            </div>
+            </div>    
+          </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  
+      
+      <script>
+          $('#testBtn').click(function(e){
+              e.preventDefault();
+              $('#testModal').modal("show");
+          });
+      </script>
+
+
+
+
+
+   
+    <div class="top">
+        <a href="#">TOP</a> 
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -313,6 +313,9 @@ table caption {
     float: right;
 }
 
+.search-wrap .btn-list {
+    margin: 0 0 0 5px;
+}
 
 /* ========= reply ========== */
 .content-wrap {
